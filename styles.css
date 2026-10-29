@@ -42,12 +42,12 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .lockup {
   display: inline-flex;
   align-items: center;
-  gap: 0.4em;
+  gap: 0.5em;
   font-size: clamp(1.3rem, 3.3vw, 2.5rem);
   text-decoration: none;
 }
-/* Seal stands three times the height of the lettering */
-.lockup .seal { flex: none; height: 2.85em; width: calc(2.85em * 360 / 440); }
+/* Large seal standing beside both lines of the title */
+.lockup .seal { flex: none; height: 3.6em; width: calc(3.6em * 360 / 440); }
 .wordmark {
   font-weight: 500;
   letter-spacing: 0.07em;
