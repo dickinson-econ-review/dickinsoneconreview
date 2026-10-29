@@ -1,0 +1,4 @@
+# Drafts and local tooling: never publish
+logo-drafts/
+.claude/
+.DS_Store
