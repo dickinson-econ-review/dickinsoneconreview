@@ -98,9 +98,12 @@
               <text x="231" y="193">ΠΛΗΝ</text>
               <text x="231" y="228" textLength="88" lengthAdjust="spacingAndGlyphs">ΚΕΡΔΟΥΣ</text>
             </g>
-            <text font-size="27" font-weight="600" fill="#111">
-              <textPath href="#band-top" startOffset="50%" text-anchor="middle" textLength="868" lengthAdjust="spacing">SIGILLVM · EPHEMERIDIS · ECONOMIAE · DICKINSONIAE</textPath>
-            </text>
+            <!-- Split at the middle dot so it sits exactly at the top and each half fills its own side -->
+            <g font-size="27" font-weight="600" fill="#111">
+              <text><textPath href="#band-top" startOffset="27" textLength="423" lengthAdjust="spacing">SIGILLVM · EPHEMERIDIS</textPath></text>
+              <text><textPath href="#band-top" startOffset="461" text-anchor="middle">·</textPath></text>
+              <text><textPath href="#band-top" startOffset="472" textLength="423" lengthAdjust="spacing">OECONOMIAE · DICKINSONII</textPath></text>
+            </g>
           </svg>
         <span class="wordmark"><span class="nowrap"><em>the</em> Dickinson</span> <span class="nowrap">Economics Review</span></span>
       </a></h1>
