@@ -1,0 +1,227 @@
+/* Dickinson Economics Review — shared styles */
+
+:root {
+  --paper: #fbf9f4;
+  --ink: #1d1b18;
+  --ink-soft: #55504a;
+  --rule: #d9d3c7;
+  --accent: #8c1d18;
+  --serif: "EB Garamond", Georgia, "Times New Roman", serif;
+  --sans: "Source Sans 3", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --measure: 68ch;
+  --wide: 1080px;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: 3px; }
+a:hover { color: var(--accent); text-decoration-color: currentColor; }
+
+.wrap { max-width: var(--wide); margin: 0 auto; padding: 0 24px; }
+
+/* Masthead */
+.masthead {
+  border-bottom: 3px double var(--ink);
+  text-align: center;
+  padding: 40px 0 0;
+}
+.masthead .issue-line {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.masthead .title {
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  font-weight: 500;
+  line-height: 1.05;
+  margin: 12px 0 6px;
+  letter-spacing: -0.01em;
+}
+.masthead .title a { text-decoration: none; }
+.masthead .title a:hover { color: inherit; }
+.masthead .tagline {
+  font-style: italic;
+  color: var(--ink-soft);
+  margin: 0 0 24px;
+}
+
+.nav {
+  border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 12px 0;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.nav a { text-decoration: none; }
+.nav a[aria-current="page"] { color: var(--accent); }
+
+/* Section headings */
+.kicker {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 8px;
+  margin: 56px 0 24px;
+}
+.section-head h2 { font-size: 1.6rem; font-weight: 500; margin: 0; }
+.section-head span { font-family: var(--sans); font-size: 0.8rem; color: var(--ink-soft); }
+
+/* Lead article */
+.lead {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 48px;
+  padding: 48px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.lead h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 500;
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+.lead h2 a { text-decoration: none; }
+.lead .abstract { font-size: 1.2rem; color: var(--ink-soft); margin: 0 0 16px; }
+.lead aside {
+  border-left: 1px solid var(--rule);
+  padding-left: 32px;
+  font-size: 1.05rem;
+}
+.lead aside h3 {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+.lead aside p { margin: 0 0 12px; }
+
+.byline {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+.byline strong { color: var(--ink); font-weight: 600; }
+
+/* Article list */
+.articles { list-style: none; margin: 0; padding: 0; }
+.articles li {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.articles .num {
+  font-size: 1.5rem;
+  color: var(--accent);
+  font-variant-numeric: oldstyle-nums;
+  line-height: 1.2;
+}
+.articles h3 { font-size: 1.35rem; font-weight: 500; margin: 0 0 4px; line-height: 1.25; }
+.articles h3 a { text-decoration: none; }
+.articles p { margin: 0 0 6px; color: var(--ink-soft); }
+
+/* Callout */
+.callout {
+  margin: 64px 0;
+  padding: 32px;
+  border: 1px solid var(--rule);
+  background: #fff;
+  text-align: center;
+}
+.callout h2 { font-weight: 500; margin: 0 0 8px; }
+.callout p { margin: 0 auto 16px; max-width: 52ch; color: var(--ink-soft); }
+.button {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--paper);
+  background: var(--ink);
+  padding: 12px 22px;
+}
+.button:hover { background: var(--accent); color: var(--paper); }
+
+/* Prose pages */
+.prose { max-width: var(--measure); margin: 48px auto 0; }
+.prose h1 { font-size: 2.4rem; font-weight: 500; line-height: 1.15; margin: 0 0 16px; }
+.prose h2 { font-size: 1.5rem; font-weight: 500; margin: 40px 0 8px; }
+.prose .lede { font-size: 1.3rem; color: var(--ink-soft); }
+
+/* Editorial board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0 32px;
+  margin-top: 16px;
+}
+.member { padding: 16px 0; border-top: 1px solid var(--rule); }
+.member .role {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0;
+}
+.member .name { font-size: 1.2rem; margin: 2px 0 0; }
+.member .detail { font-family: var(--sans); font-size: 0.85rem; color: var(--ink-soft); margin: 0; }
+
+/* Footer */
+.footer {
+  margin-top: 80px;
+  border-top: 3px double var(--ink);
+  padding: 24px 0 48px;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+.footer p { margin: 0; }
+
+@media (max-width: 760px) {
+  body { font-size: 1.08rem; }
+  .wrap { padding: 0 16px; }
+  .masthead { padding-top: 28px; }
+  .nav { gap: 20px; }
+  .lead { grid-template-columns: 1fr; gap: 24px; padding: 32px 0; }
+  .lead aside { border-left: 0; border-top: 1px solid var(--rule); padding: 20px 0 0; }
+  .articles li { grid-template-columns: 2rem 1fr; gap: 12px; }
+  .callout { padding: 24px 16px; }
+  .prose h1 { font-size: 2rem; }
+}
