@@ -49,6 +49,10 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 }
 /* Large seal standing beside both lines of the title */
 .lockup .seal { flex: none; height: 3.6em; width: calc(3.6em * 360 / 440); }
+/* Seal's white areas take the page colour so it sits on the paper, not on a white patch.
+   They stay filled (not transparent) because they mask the staff behind the book and key. */
+.lockup .seal [fill="#fff"] { fill: var(--paper); }
+.lockup .seal [stroke="#fff"] { stroke: var(--paper); }
 .wordmark {
   font-family: var(--century);
   font-weight: 400;
