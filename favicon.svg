@@ -68,10 +68,10 @@
     <path d="M82,250 C114,243 150,243 178,254 M282,250 C246,243 210,243 182,254" fill="none" stroke-width="1"/>
   </g>
   <g font-size="22" font-weight="600" fill="#111" text-anchor="middle" transform="translate(0 12)">
-    <text x="129" y="193">ΜΗΔΕΝ</text>
-    <text x="129" y="228">ΑΓΑΝ</text>
-    <text x="231" y="193">ΠΛΗΝ</text>
-    <text x="231" y="228" textLength="88" lengthAdjust="spacingAndGlyphs">ΚΕΡΔΟΥΣ</text>
+    <text x="129" y="193">ΓΝΩΘΙ</text>
+    <text x="129" y="228" textLength="88" lengthAdjust="spacingAndGlyphs">ΣΕΑΥΤΟΝ</text>
+    <text x="231" y="193">ΜΗΔΕΝ</text>
+    <text x="231" y="228">ΑΓΑΝ</text>
   </g>
   <!-- Split at the middle dot so it sits exactly at the top and each half fills its own side -->
   <g font-size="27" font-weight="600" fill="#111">
